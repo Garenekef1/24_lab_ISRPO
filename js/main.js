@@ -1,3 +1,6 @@
+import mainUtil, { greet, add, multiply, PI } from "./utils.js";
+import * as MathTools from "./math.js";
+
 console.log("Step 6 destructuring");
 
 const product = {
@@ -32,3 +35,13 @@ const profileBase = { name: "Alexey", age: 19 };
 const profileExtra = { city: "Tomsk", hobby: "coding" };
 const fullProfile = { ...profileBase, ...profileExtra };
 console.log(fullProfile);
+
+console.log("Step 8 modules");
+console.log(mainUtil());
+console.log(greet("Alexey"));
+console.log(add(10, 5));
+console.log(multiply(4, 3));
+console.log(PI);
+console.log(MathTools.square(5));
+console.log(MathTools.cube(3));
+console.log(MathTools.E);

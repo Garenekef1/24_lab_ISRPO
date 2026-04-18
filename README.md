@@ -23,3 +23,4 @@ tic-tac-toe/index.html
 tic-tac-toe/style.css
 tic-tac-toe/main.js
 img/.gitkeep
+img используется для скриншотов по шагам

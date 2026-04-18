@@ -45,3 +45,25 @@ console.log(PI);
 console.log(MathTools.square(5));
 console.log(MathTools.cube(3));
 console.log(MathTools.E);
+
+console.log("Step 9 promises");
+
+function checkInventory(inStock) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (inStock) {
+        resolve("Товар в наличии");
+      } else {
+        reject("Товара нет в наличии");
+      }
+    }, 500);
+  });
+}
+
+checkInventory(true)
+  .then((message) => {
+    console.log(message);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
